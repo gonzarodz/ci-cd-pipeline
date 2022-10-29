@@ -1,4 +1,59 @@
-# ci-cd-pipeline
-Build a CI/CD Pipeline for Udacity Project 2
+# Overview
 
-[![Python application test with Github Actions](https://github.com/gonzarodz/ci-cd-pipeline/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/gonzarodz/ci-cd-pipeline/actions/workflows/pythonapp.yml)
+Udacity Azure DevOps CI/CD Pipeline Project
+
+## Project Plan
+<TODO: Project Plan
+
+* https://trello.com/b/91hVTfGz/ci-cd-pipeline
+* Spreadsheet is located in Document work card in Trello
+
+## Instructions
+
+<TODO:  
+* Architectural Diagram (Shows how key parts of the system work)>
+
+* Log in to Azure Portal and launch Azure Cloud Shell by clicking the shell icon at the top.
+
+* Clone your repo into the shell by running git clone <URL>
+
+* cd into your repo and deploy the webapp using the following command and adding your own ApplicationName <az webapp up -n ApplicationName>
+
+* Once it's been successfully deploy access the URL https://ApplicationName.azurewebsites.net/
+
+* Log in to [Azure DevOps](https://dev.azure.com/) to build a pipeline.
+
+* Create a New Project then go to project settings and add a Service Connection
+
+* Select Azure Resource Manager and make sure you select the correct Resource Group
+
+* Now create a new pipeline linked to your GitHub account.
+
+* Under Configure select Python to Linux Web App on Azure and run the pipeline
+
+* After pipeline finish the build check if your website deployed successfully. 
+
+* Now everytime you make a change to your code the pipeline will execute.
+
+* You can also lint and test your code using GitHub Actions. 
+
+* Create a YAML file and add necesary steps to lint and test your code.
+
+* To test and lint your code you can create a Makefile that runs based of a requirements.txt file that has all the dependencies needed.
+
+```bash
+udacity@Azure:~$ ./make_predict_azure_app.sh
+Port: 443
+{"prediction":[20.35373177134412]}
+```
+> 
+
+## Enhancements
+
+We can improve this project project by using a GitHub pipeline that way we centralize everything and don't have to work with multiple platforms.
+
+## Demo 
+
+https://youtu.be/p6PS7PHcAps
+
+
