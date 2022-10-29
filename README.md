@@ -11,7 +11,7 @@ Udacity Azure DevOps CI/CD Pipeline Project
 
 * Log in to Azure Portal and launch Azure Cloud Shell by clicking the shell icon at the top.
 
-* Clone your repo into the shell by running git clone <URL>
+* Clone your repo into the shell by running git clone "URL"
 
 * cd into your repo and deploy the webapp using the following command and adding your own ApplicationName <az webapp up -n ApplicationName>
 
@@ -38,9 +38,9 @@ Udacity Azure DevOps CI/CD Pipeline Project
 * To test and lint your code you can create a Makefile that runs based of a requirements.txt file that has all the dependencies needed. [screenshot](https://trello.com/c/clOyJkVS/4-set-up-github-actions-to-build-and-test-code)
 
 ```bash
-udacity@Azure:~$ ./make_predict_azure_app.sh
+jonathan [ ~/ci-cd-pipeline ]$ ./make_predict_azure_app.sh 
 Port: 443
-{"prediction":[20.35373177134412]}
+Model not loaded
 ```
 > 
 
