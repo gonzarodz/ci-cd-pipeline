@@ -3,15 +3,11 @@
 Udacity Azure DevOps CI/CD Pipeline Project
 
 ## Project Plan
-<TODO: Project Plan
-
 * https://trello.com/b/91hVTfGz/ci-cd-pipeline
 * Spreadsheet is located in Document work card in Trello
 
 ## Instructions
-
-<TODO:  
-* Architectural Diagram (Shows how key parts of the system work)>
+* [Architectural Diagram](https://trello.com/c/adlRpLEp/12-architecture-diagram)
 
 * Log in to Azure Portal and launch Azure Cloud Shell by clicking the shell icon at the top.
 
@@ -19,7 +15,7 @@ Udacity Azure DevOps CI/CD Pipeline Project
 
 * cd into your repo and deploy the webapp using the following command and adding your own ApplicationName <az webapp up -n ApplicationName>
 
-* Once it's been successfully deploy access the URL https://ApplicationName.azurewebsites.net/
+* Once it's been successfully deploy access the URL https://ApplicationName.azurewebsites.net/ [screenshot](https://trello.com/c/Kg4ePvfC/7-deploy-flask-ml-api)
 
 * Log in to [Azure DevOps](https://dev.azure.com/) to build a pipeline.
 
@@ -31,15 +27,15 @@ Udacity Azure DevOps CI/CD Pipeline Project
 
 * Under Configure select Python to Linux Web App on Azure and run the pipeline
 
-* After pipeline finish the build check if your website deployed successfully. 
+* After pipeline finish the build check if your website deployed successfully. [screenshot](https://trello.com/c/GsZPwFdb/5-build-a-azure-pipeline)
 
 * Now everytime you make a change to your code the pipeline will execute.
 
 * You can also lint and test your code using GitHub Actions. 
 
-* Create a YAML file and add necesary steps to lint and test your code.
+* Create a YAML file and add necesary steps to lint and test your code. 
 
-* To test and lint your code you can create a Makefile that runs based of a requirements.txt file that has all the dependencies needed.
+* To test and lint your code you can create a Makefile that runs based of a requirements.txt file that has all the dependencies needed. [screenshot](https://trello.com/c/clOyJkVS/4-set-up-github-actions-to-build-and-test-code)
 
 ```bash
 udacity@Azure:~$ ./make_predict_azure_app.sh
